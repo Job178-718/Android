@@ -46,8 +46,15 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
+    implementation("androidx.activity:activity-ktx:1.8.2")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    // https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
+    implementation ("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation ("com.google.code.gson:gson:2.8.6")
+
+
 }

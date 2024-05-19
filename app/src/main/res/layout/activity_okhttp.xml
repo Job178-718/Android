@@ -2,40 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:id="@+id/main">
 
     <TextView
-        android:id="@+id/view"
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="View"
+        android:text="okhttp"
         android:gravity="center"
         android:background="@drawable/home_button"
         android:layout_margin="10dp"
-        android:textSize="18dp"/>
+        android:textSize="18dp"
+        tools:ignore="Suspicious0dp" />
+
 
     <TextView
-        android:id="@+id/mvvm"
+        android:id="@+id/data"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="mvvm"
         android:gravity="center"
-        android:background="@drawable/home_button"
         android:layout_margin="10dp"
-        android:textSize="18dp"/>
+        android:textSize="18dp"
+        tools:ignore="Suspicious0dp" />
 
-    <TextView
-        android:id="@+id/http"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="http"
-        android:gravity="center"
-        android:background="@drawable/home_button"
-        android:layout_margin="10dp"
-        android:textSize="18dp"/>
 
 </LinearLayout>

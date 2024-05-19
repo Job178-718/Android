@@ -1,16 +1,11 @@
 package com.kt.android
 
-import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.kt.android.databinding.ActivityMainBinding
+import com.kt.android.mvvm.DiceRollActivity
+import com.kt.android.http.HttpActivity
 import com.kt.android.utils.JumpActivityUtils
-import com.kt.android.utils.ToastUtils
 import com.kt.android.view.ViewActivity
-import com.kt.android.view.recyclerview.RecyclerViewActivity
 import com.sun.m.base.BaseActivity
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
@@ -18,6 +13,14 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         super.onCreate(savedInstanceState)
         binding.view.setOnClickListener{
             JumpActivityUtils.jumpActivity(this,ViewActivity::class.java)
+        }
+        /*MVVM页面*/
+        binding.mvvm.setOnClickListener{
+            JumpActivityUtils.jumpActivity(this,DiceRollActivity::class.java)
+        }
+        /*MVVM页面*/
+        binding.http.setOnClickListener{
+            JumpActivityUtils.jumpActivity(this,HttpActivity::class.java)
         }
     }
 }
