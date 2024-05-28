@@ -6,6 +6,7 @@ import com.kt.android.mvvm.DiceRollActivity
 import com.kt.android.http.HttpActivity
 import com.kt.android.utils.JumpActivityUtils
 import com.kt.android.view.ViewActivity
+import com.kt.android.workmanager.WorkManagerActivity
 import com.sun.m.base.BaseActivity
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
@@ -21,6 +22,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         /*MVVM页面*/
         binding.http.setOnClickListener{
             JumpActivityUtils.jumpActivity(this,HttpActivity::class.java)
+        }
+        /*WorkManager页面*/
+        binding.workmanager.setOnClickListener{
+            JumpActivityUtils.jumpActivity(this, WorkManagerActivity::class.java)
         }
     }
 }

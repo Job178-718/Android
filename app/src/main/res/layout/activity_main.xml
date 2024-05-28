@@ -38,4 +38,14 @@
         android:layout_margin="10dp"
         android:textSize="18dp"/>
 
+    <TextView
+        android:id="@+id/workmanager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="workmanager"
+        android:gravity="center"
+        android:background="@drawable/home_button"
+        android:layout_margin="10dp"
+        android:textSize="18dp"/>
+
 </LinearLayout>
